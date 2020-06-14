@@ -1,4 +1,6 @@
-// nvServer.cpp : Defines the entry point for the console application.
+// Author: Venkat Nalla
+// This is simple test program to test the latency of transferring a file using direct TCP/IP connection
+// nvServer.c : Defines the entry point for the console application.
 //
 #include "definesGvars.h"
 
