@@ -1,0 +1,29 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: echo
+      run: echo "configuring"
+    - name: configure
+      run: ./configure
+    - name: echo1
+      run: echo "making"
+    - name: make
+      run: make
+    - name: echo2
+      run: echo "checking"
+    - name: make check
+      run: make check
+    - name: make distcheck
+      run: make distcheck
