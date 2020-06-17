@@ -1,4 +1,4 @@
-name: C/C++ CI
+name: Test nvServer
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
     - name: echo listing
       run: ls
     - name: echo change folder
-      run: cd nvServer
+      run: cd nvServer/
     - name: echo listing
       run: ls
     - name: echo step
