@@ -11,6 +11,9 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    env:
+      working-directory: nvserver/	
+	
     steps:
     - uses: actions/checkout@v2
     - name: echo listing
