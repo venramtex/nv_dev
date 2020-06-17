@@ -20,8 +20,8 @@ jobs:
       run: ls
       working-directory: ${{env.working-directory}}
 
-    - name: echo change folder
-      run: cd nvServer/
+#    - name: echo change folder
+#      run: cd nvServer/
     - name: echo listing
       run: ls
     - name: echo step
