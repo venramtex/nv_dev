@@ -24,9 +24,11 @@ jobs:
 #      run: cd nvServer/
     - name: echo listing
 #      run: echo "listing"
+      working-directory: ${{env.working-directory}}
       run: ls
     - name: echo making
       run: echo "making"
     - name: make
       run: make
+      working-directory: ${{env.working-directory}}
 
