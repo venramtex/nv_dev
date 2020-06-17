@@ -9,11 +9,13 @@ on:
 jobs:
   build:
 
+    runs-on: ubuntu-latest
+
     env:
       working-directory: nvServer/
 
     steps:
-    - uses: actions/checkout@v2
+#    - uses: actions/checkout@v2
     - name: echo listing
       run: ls
       working-directory: ${{env.working-directory}}
@@ -31,6 +33,4 @@ jobs:
     - name: echo listing after make
       working-directory: ${{env.working-directory}}
       run: ls
-
-    runs-on: ubuntu-latest
-
+    - uses: actions/checkout@v2
