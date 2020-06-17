@@ -22,8 +22,8 @@ jobs:
 
 #    - name: echo change folder
 #      run: cd nvServer/
-#    - name: echo listing
-      run: echo "listing"
+    - name: echo listing
+#      run: echo "listing"
       run: ls
     - name: echo making
       run: echo "making"
