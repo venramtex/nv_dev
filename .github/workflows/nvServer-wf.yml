@@ -18,13 +18,14 @@ jobs:
     - uses: actions/checkout@v2
     - name: echo listing
       run: ls
-#      working-directory: ${{env.working-directory}}
+      working-directory: ${{env.working-directory}}
 
 #    - name: echo change folder
 #      run: cd nvServer/
-    - name: echo listing
+#    - name: echo listing
+      run: echo "listing"
       run: ls
-    - name: echo step
+    - name: echo making
       run: echo "making"
     - name: make
       run: make
