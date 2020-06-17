@@ -33,5 +33,5 @@ jobs:
       working-directory: ${{env.working-directory}}
 
     - name: echo listing after make
-      run: ls
       working-directory: ${{env.working-directory}}
+      run: ls
