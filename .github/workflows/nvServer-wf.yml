@@ -13,10 +13,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: echo listing
+      run: ls
     - name: echo step
       run: echo "making"
-	- name: echo "listing"
-	  run: ls
     - name: make
       run: make
 
