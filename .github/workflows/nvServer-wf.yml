@@ -13,17 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: echo
-      run: echo "configuring"
-    - name: configure
-      run: ./configure
-    - name: echo1
+    - name: echo step
       run: echo "making"
     - name: make
       run: make
-    - name: echo2
-      run: echo "checking"
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+
