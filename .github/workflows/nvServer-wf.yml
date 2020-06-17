@@ -9,8 +9,6 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
-
     env:
       working-directory: nvServer/
 
@@ -20,8 +18,6 @@ jobs:
       run: ls
       working-directory: ${{env.working-directory}}
 
-#    - name: echo change folder
-#      run: cd nvServer/
     - name: echo listing
 #      run: echo "listing"
       working-directory: ${{env.working-directory}}
@@ -35,3 +31,6 @@ jobs:
     - name: echo listing after make
       working-directory: ${{env.working-directory}}
       run: ls
+
+    runs-on: ubuntu-latest
+
