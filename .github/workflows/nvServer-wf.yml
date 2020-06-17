@@ -18,6 +18,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: echo listing
       run: ls
+      working-directory: ${{env.working-directory}}
+	  
     - name: echo change folder
       run: cd nvServer/
     - name: echo listing
